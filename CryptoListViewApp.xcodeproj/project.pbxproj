@@ -14,6 +14,8 @@
 		753A25002996CAF100A95FAC /* CryptoListViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A24FF2996CAF100A95FAC /* CryptoListViewAppTests.swift */; };
 		753A250A2996CAF100A95FAC /* CryptoListViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A25092996CAF100A95FAC /* CryptoListViewAppUITests.swift */; };
 		753A250C2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A250B2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift */; };
+		753A25192996DC7A00A95FAC /* CryptoStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A25182996DC7A00A95FAC /* CryptoStruct.swift */; };
+		753A251B29973F4200A95FAC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A251A29973F4200A95FAC /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		753A25052996CAF100A95FAC /* CryptoListViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoListViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753A25092996CAF100A95FAC /* CryptoListViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewAppUITests.swift; sourceTree = "<group>"; };
 		753A250B2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		753A25182996DC7A00A95FAC /* CryptoStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStruct.swift; sourceTree = "<group>"; };
+		753A251A29973F4200A95FAC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				753A24F02996CAEF00A95FAC /* ContentView.swift */,
 				753A24F22996CAF100A95FAC /* Assets.xcassets */,
 				753A24F42996CAF100A95FAC /* Preview Content */,
+				753A25182996DC7A00A95FAC /* CryptoStruct.swift */,
+				753A251A29973F4200A95FAC /* ViewModel.swift */,
 			);
 			path = CryptoListViewApp;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				753A24F12996CAEF00A95FAC /* ContentView.swift in Sources */,
+				753A25192996DC7A00A95FAC /* CryptoStruct.swift in Sources */,
+				753A251B29973F4200A95FAC /* ViewModel.swift in Sources */,
 				753A24EF2996CAEF00A95FAC /* CryptoListViewAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
