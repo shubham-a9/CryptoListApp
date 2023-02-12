@@ -30,9 +30,11 @@ struct ListRow: View {
                 var newArray = [Int]()
                 if (defaultsArray.contains(val.id))  {
                     newArray = defaultsArray.filter({$0 != val.id})
+                    val.favorite = false
                 }else {
                     newArray = defaultsArray
                     newArray.append(val.id)
+                    val.favorite = true
                 }
                 defaults.removeObject(forKey: "favorites")
                 defaults.set(newArray, forKey: "favorites")

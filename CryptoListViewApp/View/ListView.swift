@@ -20,7 +20,11 @@ import SwiftUI
 struct ListView: View {
     @StateObject var viewModel = ViewModel()
     @State private var showFavoritesOnly = false
-    var defaultsArray: NSMutableArray = UserDefaults.standard.value(forKey: "favorites") as? NSMutableArray ?? []
+    var defaultsArray: [Int] {
+        get {
+            return UserDefaults.standard.value(forKey: "favorites") as? [Int] ?? []
+        }
+    }
     
     var filteredCryptos: [CryptoStruct] {
         viewModel.cryptoVal.filter { val in
