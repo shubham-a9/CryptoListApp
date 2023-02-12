@@ -16,6 +16,8 @@
 		753A250C2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A250B2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift */; };
 		753A25192996DC7A00A95FAC /* CryptoStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A25182996DC7A00A95FAC /* CryptoStruct.swift */; };
 		753A251B29973F4200A95FAC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A251A29973F4200A95FAC /* ViewModel.swift */; };
+		753A2520299808A100A95FAC /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A251F299808A100A95FAC /* ListView.swift */; };
+		753A25222998725500A95FAC /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A25212998725500A95FAC /* ListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		753A250B2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		753A25182996DC7A00A95FAC /* CryptoStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStruct.swift; sourceTree = "<group>"; };
 		753A251A29973F4200A95FAC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		753A251F299808A100A95FAC /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		753A25212998725500A95FAC /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +102,11 @@
 		753A24ED2996CAEF00A95FAC /* CryptoListViewApp */ = {
 			isa = PBXGroup;
 			children = (
-				753A24EE2996CAEF00A95FAC /* CryptoListViewAppApp.swift */,
-				753A24F02996CAEF00A95FAC /* ContentView.swift */,
+				753A251E2998088000A95FAC /* View */,
 				753A24F22996CAF100A95FAC /* Assets.xcassets */,
 				753A24F42996CAF100A95FAC /* Preview Content */,
-				753A25182996DC7A00A95FAC /* CryptoStruct.swift */,
-				753A251A29973F4200A95FAC /* ViewModel.swift */,
+				753A251C2998057A00A95FAC /* Model */,
+				753A251D2998059800A95FAC /* ViewModel */,
 			);
 			path = CryptoListViewApp;
 			sourceTree = "<group>";
@@ -131,6 +134,33 @@
 				753A250B2996CAF100A95FAC /* CryptoListViewAppUITestsLaunchTests.swift */,
 			);
 			path = CryptoListViewAppUITests;
+			sourceTree = "<group>";
+		};
+		753A251C2998057A00A95FAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				753A25182996DC7A00A95FAC /* CryptoStruct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		753A251D2998059800A95FAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				753A251A29973F4200A95FAC /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		753A251E2998088000A95FAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				753A24EE2996CAEF00A95FAC /* CryptoListViewAppApp.swift */,
+				753A24F02996CAEF00A95FAC /* ContentView.swift */,
+				753A251F299808A100A95FAC /* ListView.swift */,
+				753A25212998725500A95FAC /* ListRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +295,8 @@
 			files = (
 				753A24F12996CAEF00A95FAC /* ContentView.swift in Sources */,
 				753A25192996DC7A00A95FAC /* CryptoStruct.swift in Sources */,
+				753A25222998725500A95FAC /* ListRow.swift in Sources */,
+				753A2520299808A100A95FAC /* ListView.swift in Sources */,
 				753A251B29973F4200A95FAC /* ViewModel.swift in Sources */,
 				753A24EF2996CAEF00A95FAC /* CryptoListViewAppApp.swift in Sources */,
 			);

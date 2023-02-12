@@ -11,7 +11,12 @@ import SwiftUI
 struct CryptoListViewAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+                .navigationBarTitle(Text("Crypto App"))
+            }
+            .foregroundColor(.blue)
+            .padding(5)
         }
     }
 }

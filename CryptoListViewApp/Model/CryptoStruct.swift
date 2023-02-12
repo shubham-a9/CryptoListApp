@@ -5,6 +5,16 @@
 //  Created by Anurag Shubham on 2/10/23.
 //
 /*
+ "status": {
+         "timestamp": "2023-02-11T22:56:52.193Z",
+         "error_code": 0,
+         "error_message": null,
+         "elapsed": 18,
+         "credit_count": 1,
+         "notice": null,
+         "total_count": 8936
+     },
+     "data": [
         {
              "id": 3408,
              "name": "USD Coin",
@@ -57,12 +67,22 @@
                  }
              }
          }
+ ]
  */
 import Foundation
+struct APIResponseData: Codable {
+    let data: [CryptoStruct]
+}
 struct CryptoStruct: Identifiable, Codable {
     let id: Int
     let name: String
     let quote: Quote
+
+    enum CodingKeys: String, CodingKey {
+        case quote = "quote"
+        case id
+        case name
+    }
 }
 struct Quote: Codable {
     let usd: USD
