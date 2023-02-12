@@ -8,13 +8,13 @@
 import SwiftUI
 /*
  {
- "id": 3408,
- "name": "USD Coin",
- "quote": {
- "USD": {
- "price": 1.0000747365630451
- }
- }
+    "id": 3408,
+    "name": "USD Coin",
+    "quote": {
+        "USD": {
+            "price": 1.0000747365630451
+                }
+            }
  }
  */
 struct ListView: View {

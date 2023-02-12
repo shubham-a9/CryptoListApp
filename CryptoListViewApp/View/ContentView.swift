@@ -13,25 +13,23 @@ struct ContentView: View {
     let color = Color.init("black_1")
     
     var body: some View {
-        //NavigationView {
-            VStack(alignment: .center) {
-                Text("Welcome")
-                    .font(.title)
-                NavigationLink(destination: list,
-                               isActive: $isActive,
-                               label: { EmptyView() })
-            }
-            .background(color)
-            .onAppear(perform: {
-                self.gotoList(time: 2.5)
-            })
-        //}
+        VStack(alignment: .center) {
+            Text("Welcome!")
+                .font(.largeTitle)
+            NavigationLink(destination: list,
+                           isActive: $isActive,
+                           label: { EmptyView() })
+            Text("Loading...")
+        }
+        .background(color)
+        .onAppear(perform: {
+            self.gotoList(time: 3)
+        })
     }
     
     func gotoList(time: Double) {
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(time)) {
             self.isActive = true
-            
         }
     }
 }
