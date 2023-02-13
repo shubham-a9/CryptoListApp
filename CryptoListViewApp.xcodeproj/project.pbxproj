@@ -18,6 +18,9 @@
 		753A251B29973F4200A95FAC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A251A29973F4200A95FAC /* ViewModel.swift */; };
 		753A2520299808A100A95FAC /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A251F299808A100A95FAC /* ListView.swift */; };
 		753A25222998725500A95FAC /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A25212998725500A95FAC /* ListRow.swift */; };
+		75AFEF3F299A11A40072D7BB /* APIResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFEF3E299A11A40072D7BB /* APIResponseData.swift */; };
+		75AFEF41299A11DF0072D7BB /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFEF40299A11DF0072D7BB /* Quote.swift */; };
+		75AFEF43299A11FC0072D7BB /* USD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFEF42299A11FC0072D7BB /* USD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		753A251A29973F4200A95FAC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		753A251F299808A100A95FAC /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		753A25212998725500A95FAC /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		75AFEF3E299A11A40072D7BB /* APIResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseData.swift; sourceTree = "<group>"; };
+		75AFEF40299A11DF0072D7BB /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		75AFEF42299A11FC0072D7BB /* USD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				753A25182996DC7A00A95FAC /* CryptoStruct.swift */,
+				75AFEF3E299A11A40072D7BB /* APIResponseData.swift */,
+				75AFEF40299A11DF0072D7BB /* Quote.swift */,
+				75AFEF42299A11FC0072D7BB /* USD.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,9 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AFEF3F299A11A40072D7BB /* APIResponseData.swift in Sources */,
 				753A24F12996CAEF00A95FAC /* ContentView.swift in Sources */,
+				75AFEF43299A11FC0072D7BB /* USD.swift in Sources */,
 				753A25192996DC7A00A95FAC /* CryptoStruct.swift in Sources */,
 				753A25222998725500A95FAC /* ListRow.swift in Sources */,
+				75AFEF41299A11DF0072D7BB /* Quote.swift in Sources */,
 				753A2520299808A100A95FAC /* ListView.swift in Sources */,
 				753A251B29973F4200A95FAC /* ViewModel.swift in Sources */,
 				753A24EF2996CAEF00A95FAC /* CryptoListViewAppApp.swift in Sources */,

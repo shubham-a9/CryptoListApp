@@ -28,11 +28,9 @@ struct ListRow: View {
                 var newArray = [Int]()
                 if (viewModel.defaultsArray.contains(val.id))  {
                     newArray = viewModel.defaultsArray.filter({$0 != val.id})
-                    val.favorite.toggle()
                 }else {
                     newArray = viewModel.defaultsArray
                     newArray.append(val.id)
-                    val.favorite.toggle()
                 }
                 defaults.removeObject(forKey: "favorites")
                 defaults.set(newArray, forKey: "favorites")
