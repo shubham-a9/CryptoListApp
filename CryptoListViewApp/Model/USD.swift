@@ -25,4 +25,9 @@
 import Foundation
 struct USD: Codable {
     let price: Double
+    let percentChangein1Hr: Double
+    enum CodingKeys: String, CodingKey {
+        case price
+        case percentChangein1Hr = "percent_change_1h"
+    }
 }

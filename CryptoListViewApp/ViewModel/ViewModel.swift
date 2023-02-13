@@ -23,7 +23,7 @@ final class ViewModel: ObservableObject {
         cancellable?.cancel()
     }
     
-    func getUsersUsingCombine() throws -> [CryptoStruct] {
+    func getListOfCryptos() throws -> [CryptoStruct] {
         guard let url = URL(string: "\(BASE_URL)") else{
             throw APIError.invalidUrl
         }

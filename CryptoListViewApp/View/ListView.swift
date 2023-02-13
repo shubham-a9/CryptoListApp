@@ -7,7 +7,7 @@
 
 import SwiftUI
 /*
- {
+ [{
     "id": 3408,
     "name": "USD Coin",
     "quote": {
@@ -15,7 +15,7 @@ import SwiftUI
             "price": 1.0000747365630451
                 }
             }
- }
+ }]
  */
 struct ListView: View {
     @StateObject var viewModel = ViewModel()
@@ -42,9 +42,9 @@ struct ListView: View {
         .navigationBarTitle(Text("Cryptocurrencies"))
         .task {
             do {
-                let  _ = try viewModel.getUsersUsingCombine()
+                let  _ = try viewModel.getListOfCryptos()
             }catch {
-                print("Error in getUsersUsingCombine")
+                print("Error in getListOfCryptos")
             }
         }
         .listStyle(PlainListStyle())

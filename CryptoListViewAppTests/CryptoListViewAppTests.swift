@@ -86,6 +86,7 @@ class CryptoListViewAppTests: XCTestCase {
                 XCTAssertTrue(data.name == "USD Coin")
                 XCTAssertTrue(data.id == 3408)
                 XCTAssertTrue(data.quote.usd.price == 1.0000747365630451)
+                XCTAssertTrue(data.quote.usd.percentChangein1Hr == 0.00127592)
             }
         }catch{
             print("\(error)")

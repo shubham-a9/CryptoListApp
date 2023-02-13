@@ -21,9 +21,19 @@ struct ListRow: View {
             Text("\(val.name)")
                 .foregroundColor(.black)
             Spacer()
-            Text("$ \(val.quote.usd.price)")
-                .foregroundColor(.green)
 
+            if (val.quote.usd.percentChangein1Hr > 0) {
+                Text("$ \(val.quote.usd.price)")
+                    .foregroundColor(.green)
+                Image(systemName: "arrowtriangle.up.fill")
+                    .foregroundColor(Color.green)
+            }else {
+                Text("$ \(val.quote.usd.price)")
+                    .foregroundColor(.red)
+                Image(systemName: "arrowtriangle.down.fill")
+                    .foregroundColor(Color.red)
+            }
+            
             Button(action: {
                 var newArray = [Int]()
                 if (viewModel.defaultsArray.contains(val.id))  {
@@ -51,6 +61,6 @@ struct ListRow: View {
 
 struct ListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ListRow(val: CryptoStruct(id: 1, name: "Bitcoin", quote: Quote(usd: USD(price: 1.023467))))
+        ListRow(val: CryptoStruct(id: 1, name: "Bitcoin", quote: Quote(usd: USD(price: 1.023467, percentChangein1Hr: 0.001)))).environmentObject(ViewModel())
     }
 }

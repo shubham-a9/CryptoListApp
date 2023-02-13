@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		753A24EF2996CAEF00A95FAC /* CryptoListViewAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A24EE2996CAEF00A95FAC /* CryptoListViewAppApp.swift */; };
+		753A24EF2996CAEF00A95FAC /* CryptoListViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A24EE2996CAEF00A95FAC /* CryptoListViewApp.swift */; };
 		753A24F12996CAEF00A95FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A24F02996CAEF00A95FAC /* ContentView.swift */; };
 		753A24F32996CAF100A95FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753A24F22996CAF100A95FAC /* Assets.xcassets */; };
 		753A24F62996CAF100A95FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753A24F52996CAF100A95FAC /* Preview Assets.xcassets */; };
@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		753A24EB2996CAEF00A95FAC /* CryptoListViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoListViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		753A24EE2996CAEF00A95FAC /* CryptoListViewAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewAppApp.swift; sourceTree = "<group>"; };
+		753A24EE2996CAEF00A95FAC /* CryptoListViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewApp.swift; sourceTree = "<group>"; };
 		753A24F02996CAEF00A95FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		753A24F22996CAF100A95FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753A24F52996CAF100A95FAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		753A251E2998088000A95FAC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				753A24EE2996CAEF00A95FAC /* CryptoListViewAppApp.swift */,
+				753A24EE2996CAEF00A95FAC /* CryptoListViewApp.swift */,
 				753A24F02996CAEF00A95FAC /* ContentView.swift */,
 				753A251F299808A100A95FAC /* ListView.swift */,
 				753A25212998725500A95FAC /* ListRow.swift */,
@@ -310,7 +310,7 @@
 				75AFEF41299A11DF0072D7BB /* Quote.swift in Sources */,
 				753A2520299808A100A95FAC /* ListView.swift in Sources */,
 				753A251B29973F4200A95FAC /* ViewModel.swift in Sources */,
-				753A24EF2996CAEF00A95FAC /* CryptoListViewAppApp.swift in Sources */,
+				753A24EF2996CAEF00A95FAC /* CryptoListViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

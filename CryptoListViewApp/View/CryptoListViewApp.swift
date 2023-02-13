@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CryptoListViewAppApp: App {
+struct CryptoListViewApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
