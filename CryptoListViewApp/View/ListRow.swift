@@ -9,12 +9,7 @@ import SwiftUI
 
 struct ListRow: View {
     @State private var val: CryptoStruct
-    var defaultsArray: [Int] {
-        get {
-            return UserDefaults.standard.value(forKey: "favorites") as? [Int] ?? []
-        }
-    }
-    
+    @EnvironmentObject var viewModel: ViewModel
     var defaults = UserDefaults.standard
     
     public init(val: CryptoStruct) {
@@ -24,22 +19,26 @@ struct ListRow: View {
     var body: some View {
         HStack {
             Text("\(val.name)")
+                .foregroundColor(.black)
             Spacer()
             Text("$ \(val.quote.usd.price)")
+                .foregroundColor(.green)
+
             Button(action: {
                 var newArray = [Int]()
-                if (defaultsArray.contains(val.id))  {
-                    newArray = defaultsArray.filter({$0 != val.id})
-                    val.favorite = false
+                if (viewModel.defaultsArray.contains(val.id))  {
+                    newArray = viewModel.defaultsArray.filter({$0 != val.id})
+                    val.favorite.toggle()
                 }else {
-                    newArray = defaultsArray
+                    newArray = viewModel.defaultsArray
                     newArray.append(val.id)
-                    val.favorite = true
+                    val.favorite.toggle()
                 }
                 defaults.removeObject(forKey: "favorites")
                 defaults.set(newArray, forKey: "favorites")
+                viewModel.defaultsArray = newArray
             }) {
-                if (defaultsArray.contains(val.id))  {
+                if (viewModel.defaultsArray.contains(val.id))  {
                     Image(systemName: "star.fill")
                         .foregroundColor(Color.yellow)
                 } else {

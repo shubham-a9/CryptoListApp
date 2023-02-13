@@ -12,7 +12,7 @@ struct CryptoListViewAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView(count: 3)
                 .navigationBarTitle(Text("Crypto App"))
             }
             .foregroundColor(.blue)

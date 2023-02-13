@@ -77,7 +77,7 @@ struct CryptoStruct: Identifiable, Codable {
     let id: Int
     let name: String
     let quote: Quote
-    var favorite: Bool?
+    var favorite: Bool = false
 
     enum CodingKeys: String, CodingKey {
         case quote = "quote"

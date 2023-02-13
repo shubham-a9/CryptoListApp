@@ -16,7 +16,7 @@ let api_key = "ad9edb1e-fd63-4f4a-9902-be7f2d67ef7e"
 @MainActor
 final class ViewModel: ObservableObject {
     @Published private(set) var cryptoVal = [CryptoStruct]()
-    
+    @Published var defaultsArray: [Int] = UserDefaults.standard.value(forKey: "favorites") as? [Int] ?? []
     private var cancellable: AnyCancellable?
     
     deinit {

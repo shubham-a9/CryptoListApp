@@ -10,19 +10,35 @@ import SwiftUI
 struct ContentView: View {
     @State private var isActive = false
     let list = ListView()
-    let color = Color.init("black_1")
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    @State private var count: Int
+    
+    public init(count: Int) {
+        self.count = count
+    }
     
     var body: some View {
         VStack(alignment: .center) {
             Text("Welcome!")
                 .font(.largeTitle)
+                .foregroundColor(.black)
             NavigationLink(destination: list,
                            isActive: $isActive,
                            label: { EmptyView() })
-            Text("Loading...")
+            Text("\(count)...")
+                .onReceive(timer) { _ in
+                    if count > 0 {
+                        count -= 1
+                    }
+                }
+                .font(.title)
+                .foregroundColor(.black)
+            
+            
         }
-        .background(color)
         .onAppear(perform: {
+            self.count = 3
             self.gotoList(time: 3)
         })
     }
@@ -36,6 +52,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(count: 3)
     }
 }
